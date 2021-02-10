@@ -1,44 +1,45 @@
 .header {
-  width      : 100%;
-  background : white;
-  color      : black;
+ width      : 100%;
+ background : white;
+ color      : black;
 }
 
 .header__logo {
-  font-weight : 100;
-  font-size   : 2rem;
-  display     : block;
+ font-weight : 100;
+ font-size   : 2rem;
+ display     : block;
 }
 
 .header__menu {
-  width           : 100%;
-  background      : black;
-  color           : white;
-  font-size       : 1.2rem;
-  display         : flex;
-  justify-content : space-between;
+ width           : 100%;
+ background      : black;
+ color           : white;
+ font-size       : 1.2rem;
+ display         : flex;
+ justify-content : space-between;
 
 }
 
 .header__menu_title {
-  span {
-    font-weight : 100;
-  }
+ span {
+  font-weight : 100;
+ }
 
 }
 
 .header__menu_lang {
-  align-self   : end;
-  margin-right : 2rem;
+ align-self   : end;
+ margin-right : 2rem;
 
-  .link {
-    text-decoration : none;
-    color           : white;
-  }
+ .link {
+  text-decoration : none;
+  color           : white;
+ }
 
-  .active {
-    font-weight     : 400;
-    text-decoration : underline;
-  }
+ .active {
+  font-weight     : 600;
+  font-style      : bold;
+  text-decoration : underline;
+ }
 }
 
