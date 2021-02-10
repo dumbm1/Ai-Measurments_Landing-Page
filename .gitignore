@@ -1,0 +1,10 @@
+*~
+/.idea
+*.ini
+test.*
+test_*.*
+/sourse/*
+/css/*
+index.html
+/blocks/*.html
+/rm/*
