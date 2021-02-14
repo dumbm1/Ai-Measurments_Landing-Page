@@ -1,4 +1,10 @@
 .body {
-  font-family: "JetBrains Mono";
-  background: white;
+  font-family : "JetBrains Mono";
+  background  : white;
 }
+
+@import "fonts";
+@import "header";
+@import "description";
+@import "tutorial";
+@import "footer";
