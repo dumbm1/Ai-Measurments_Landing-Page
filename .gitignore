@@ -4,10 +4,6 @@
 test.*
 test_*.*
 /sourse/*
-/css/*.css
-/css
 *.css
-css/*.css
-index.html
-/blocks/*.html
+*.html
 /rm
