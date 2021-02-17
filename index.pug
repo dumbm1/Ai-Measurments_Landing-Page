@@ -14,11 +14,13 @@ html(lang='en')
 
         include blocks/header
 
-        include blocks/buy
+        div(class='container')
+            div(class='d-md-flex flex-row')
+                include blocks/description
+                include blocks/tutorial
 
-        include blocks/description
 
-        include blocks/tutorial
+            include blocks/buy
 
         include blocks/footer
 
