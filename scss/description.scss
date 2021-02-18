@@ -1,5 +1,10 @@
-.description{
-  font-weight: 100;
-  font-style: normal;
-  background: coral;
+.description {
+  font-weight : 100;
+  font-style  : normal;
+  background  : coral;
+}
+
+.break {
+  word-wrap  : break-word;
+  word-break : break-all;
 }

@@ -14,13 +14,33 @@ html(lang='en')
 
         include blocks/header
 
-        div(class='container')
-            div(class='row')
-                include blocks/description
-                include blocks/tutorial
 
+
+        div(class='container')
 
             include blocks/buy
+
+            h3 Install and go!
+
+            div(class='row')
+                include blocks/description__install_auto
+                include blocks/tutorial__install_auto
+
+            div(class='row')
+                include blocks/description__install_manual
+                include blocks/tutorial__install_auto
+
+            h3 Enjoy this - save you time & brain cells!
+
+            div(class='row')
+                include blocks/description__use_linear
+                include blocks/tutorial__install_auto
+
+            div(class='row')
+                include blocks/description__use_circles
+                include blocks/tutorial__install_auto
+
+
 
         include blocks/footer
 

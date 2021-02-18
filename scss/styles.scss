@@ -1,6 +1,7 @@
 .body {
   font-family : "JetBrains Mono";
   background  : white;
+  //line-height : normal;
 }
 
 @import "fonts";
@@ -9,3 +10,4 @@
 @import "tutorial";
 @import "buy";
 @import "footer";
+@import "misc";
