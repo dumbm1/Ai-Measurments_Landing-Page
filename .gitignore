@@ -7,3 +7,7 @@ test_*.*
 *.css
 *.html
 /rm
+/css/*.css
+/blocks/*.html
+css/*.css
+blocks/*.html
