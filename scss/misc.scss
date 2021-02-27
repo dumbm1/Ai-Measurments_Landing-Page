@@ -1,4 +1,9 @@
+.body {
+  padding-top : 5rem;
+}
+
 .the-note {
+  margin-left : -1rem;
 }
 
 .the-note::before {
@@ -11,4 +16,46 @@
   padding          : 0;
   padding-left     : 0.2rem;
 
+}
+
+.link {
+  text-decoration : none;
+  display         : inline-block;
+  color           : white;
+}
+
+.link:hover {
+  text-decoration : none;
+  color           : white;
+}
+
+.link_black {
+  color : black;
+}
+
+.link_black:hover {
+  color : black;
+}
+
+.link_button-black {
+  background    : black;
+  color         : white;
+  padding       : 0.1rem 0.5rem;
+  margin-top    : 0.1rem;
+  margin-bottom : 0.1rem;
+}
+
+.link_button-black:hover {
+  background : black;
+  color      : white;
+}
+
+.text-block {
+  margin-right : 0.5rem;
+}
+
+
+
+.description_h3{
+  background : linear-gradient(to right, #ccc, #fff);
 }

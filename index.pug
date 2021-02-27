@@ -13,35 +13,46 @@ html(lang='en')
 
         include blocks/header
 
-        div(class='container')
+        include blocks/buy
 
-            include blocks/buy
+        h3.description_h3.mb-4
+            .container-lg Install & go!
 
-            h3 Install and go!
+        .container-lg
 
-            div(class='row')
-                div(class='description col-lg-5')
+            .row.align-items-center.mt-4.mb-4
+                .description.col-lg-5
                     include blocks/description__install_auto
                 include blocks/tutorial__install_auto
 
-            div(class='row')
-                div(class='description col-lg-5')
+            .row.align-items-center.mt-4.mb-4
+                .description.col-lg-5
                     include blocks/description__install_manual
                 include blocks/tutorial__install_auto
 
-            h3 Enjoy this - save you time & brain cells!
+        h3.description_h3.mt-4.mb-4
+            .container-lg
+                    span.text-block Enjoy this
+                    span.d-none.d-md-inline-block.d-lg-inline-block - save you time & brain cells
+                    span !
 
-            div(class='row')
-                div(class='description col-lg-5')
+        .container-lg
+
+            .row.align-items-center.mt-4.mb-4
+                .description.col-lg-5
                     include blocks/description__use_linear
                 include blocks/tutorial__install_auto
 
-            div(class='row')
-                div(class='description col-lg-5')
+            .row.align-items-center.mt-4.mb-4
+                .description.col-lg-5
                     include blocks/description__use_circles
                 include blocks/tutorial__install_auto
 
         include blocks/footer
 
+
+
         script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous")
+
+        script(src='js/headerSmartScroll.js')

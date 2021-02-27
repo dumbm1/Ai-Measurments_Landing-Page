@@ -1,8 +1,11 @@
 .description {
   font-weight : 100;
   font-style  : normal;
-  //background  : coral;
   overflow    : auto;
+
+  ul {
+    padding-left : 1rem;
+  }
 }
 
 .break {

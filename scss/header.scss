@@ -1,41 +1,28 @@
 .header {
   background : white;
-  color      : black;
+  box-shadow : black;
+  box-shadow : 0.25rem 0.5rem 1rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .header__logo {
   font-weight : 100;
   font-size   : 2rem;
-  display     : block;
-  margin-left : 2rem;
+  height      : 4rem;
+  display     : flex;
+  align-items : center;
 }
 
 .header__menu {
-  width           : 100%;
-  background      : black;
-  color           : white;
-  font-size       : 1.2rem;
-  display         : flex;
-  justify-content : space-between;
-
+  background : black;
+  color      : white;
+  font-size  : 1.2rem;
 }
 
 .header__menu_title {
-  span {
-    font-weight : 100;
-    margin-left : 2rem;
-  }
-
+  font-weight : 100;
 }
 
 .header__menu_lang {
-  align-self   : end;
-  margin-right : 2rem;
-
-  .link {
-    text-decoration : none;
-    color           : white;
-  }
 
   .active {
     font-weight     : 600;
@@ -43,3 +30,27 @@
     text-decoration : underline;
   }
 }
+
+/***************************/
+/*** navbar smart scroll ***/
+
+.smart-scroll {
+  position : fixed;
+  top      : 0;
+  right    : 0;
+  left     : 0;
+  z-index  : 1030;
+}
+
+.scrolled-down {
+  transform  : translateY(-100%);
+  transition : all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+  transform  : translateY(0);
+  transition : all 0.3s ease-in-out;
+}
+
+/*** ze end ***/
+/**************/
