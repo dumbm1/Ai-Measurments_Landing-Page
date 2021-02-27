@@ -1,0 +1,194 @@
+.body {
+  font-family: "JetBrains Mono";
+  background: white;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf") format("truetype"), url("fonts/JetBrainsMono/webfonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono/ttf/JetBrainsMono-Thin.ttf") format("truetype"), url("fonts/JetBrainsMono/webfonts/JetBrainsMono-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono/ttf/JetBrainsMono-Bold.ttf") format("truetype"), url("fonts/JetBrainsMono/webfonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: bold;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono/ttf/JetBrainsMono-ExtraBold.ttf") format("truetype"), url("fonts/JetBrainsMono/webfonts/JetBrainsMono-ExtraBold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: bold;
+}
+.header {
+  background: white;
+  box-shadow: black;
+}
+
+.header__logo {
+  font-weight: 100;
+  font-size: 2rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  background: black;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.header__menu_title {
+  font-weight: 100;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.header__menu_lang {
+  display: flex;
+  align-items: center;
+}
+.header__menu_lang .active {
+  font-weight: 600;
+  font-style: bold;
+  text-decoration: underline;
+}
+
+/***************************/
+/*** navbar smart scroll ***/
+.smart-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+/*** ze end ***/
+/**************/
+.description {
+  font-weight: 100;
+  font-style: normal;
+  overflow: auto;
+}
+.description ul {
+  padding-left: 1rem;
+}
+
+.break {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.tutorial {
+  font-weight: 100;
+  font-style: normal;
+  background: lightskyblue;
+}
+
+.buy {
+  background: #eee;
+  text-align: center;
+  height: 5rem;
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.buy__button {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.footer {
+  font-weight: 100;
+  color: white;
+  background: black;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0.25rem -0.5rem 1rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.body {
+  padding-top: 5rem;
+}
+
+.the-note {
+  margin-left: -1rem;
+}
+
+.the-note::before {
+  content: "NOTE:";
+  background-color: #4c4c4c;
+  color: white;
+  font-weight: 900;
+  margin-right: 0.5rem;
+  display: inline-block;
+  padding: 0;
+  padding-left: 0.2rem;
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.link_black {
+  color: black;
+}
+
+.link_black:hover {
+  color: black;
+}
+
+.link_button-black {
+  background: black;
+  color: white;
+  padding: 0.1rem 0.5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.link_button-black:hover {
+  background: black;
+  color: white;
+}
+
+.text-block {
+  margin-right: 0.5rem;
+}
+
+.description_h3 {
+  box-shadow: -6.75rem 4rem 5rem -0.75rem rgba(0, 0, 0, 0.1);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}

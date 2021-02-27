@@ -11,3 +11,5 @@ test_*.*
 /blocks/*.html
 css/*.css
 blocks/*.html
+!index.html
+!css/styles.css
