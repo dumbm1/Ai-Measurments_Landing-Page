@@ -28,7 +28,7 @@
   font-style: bold;
 }
 .header {
-  background: white;
+  background: #eee;
   box-shadow: black;
 }
 
@@ -56,10 +56,13 @@
 .header__menu_lang {
   display: flex;
   align-items: center;
+  font-weight: 100;
 }
 .header__menu_lang .active {
-  font-weight: 600;
+  font-weight: 900;
   font-style: bold;
+}
+.header__menu_lang .link:hover {
   text-decoration: underline;
 }
 
@@ -187,7 +190,7 @@
 }
 
 .description_h3 {
-  box-shadow: -6.75rem 4rem 5rem -0.75rem rgba(0, 0, 0, 0.1);
+  box-shadow: -6.75rem 4rem 5rem -0.75rem rgba(0, 0, 0, 0.2);
   height: 4rem;
   display: flex;
   align-items: center;
