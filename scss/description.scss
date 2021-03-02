@@ -6,6 +6,14 @@
   ul {
     padding-left : 1rem;
   }
+
+  .link {
+    font-weight : normal;
+  }
+
+  .link:hover {
+    text-decoration : underline;
+  }
 }
 
 .break {
