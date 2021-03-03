@@ -1,5 +1,6 @@
 .header {
   background : #eee;
+  box-shadow  : 0 .2rem .5rem .2rem rgb(0 0 0 / 20%);
 }
 
 .header__logo {
@@ -30,6 +31,10 @@
   height      : 3rem;
   display     : flex;
   align-items : center;
+  .link{}
+  .link:hover{
+    text-decoration: underline;
+  }
 }
 
 .header__menu_lang {

@@ -14,38 +14,42 @@ html(lang='en')
 
         include blocks/header
 
-        h3.description_h3.mt-4.mb-4
-            .container-lg Install & go!
+        .container-xl.mt-4.mb-4
+            h3.description_h3 Install & go!
 
-        .container-lg
+        .container-xl
 
             .row.align-items-center.mt-4.mb-4
-                .description.col-lg-5
+                .description.col-xl-4
                     include blocks/description__install_auto
-                include blocks/tutorial__install_auto
+                .description.col-xl-8
+                    include blocks/tutorial__install_auto
 
             .row.align-items-center.mt-4.mb-4
-                .description.col-lg-5
+                .description.col-xl-4
                     include blocks/description__install_manual
-                include blocks/tutorial__install_manual
+                .description.col-xl-8
+                    include blocks/tutorial__install_manual
 
-        h3.description_h3.mt-4.mb-4
-            .container-lg
+        .container-xl.mt-4.mb-4
+            h3.description_h3
                 span.text-block Enjoy this
                 span.d-none.d-md-inline-block.d-lg-inline-block - save you time & brain cells
                 span !
 
-        .container-lg
+        .container-xl
 
             .row.align-items-center.mt-4.mb-4
-                .description.col-lg-5
+                .description.col-xl-4
                     include blocks/description__use_linear
-                include blocks/tutorial__use_linear
+                .description.col-xl-8
+                    include blocks/tutorial__use_linear
 
             .row.align-items-center.mt-4.mb-4
-                .description.col-lg-5
+                .description.col-xl-4
                     include blocks/description__use_radius_diameter
-                include blocks/tutorial__use_radius_diameter
+                .description.col-xl-8
+                    include blocks/tutorial__use_radius_diameter
 
         include blocks/buy
 
