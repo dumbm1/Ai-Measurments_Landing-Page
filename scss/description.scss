@@ -22,10 +22,12 @@
 }
 
 .description_h3 {
-  height                    : 2rem;
-  display                   : flex;
-  align-items               : center;
-  padding-left              : 1.5rem;
-  border-top-left-radius    : 2rem;
-  background                : linear-gradient(to right, #eee, #eee 70%, white);
+  height                 : 2rem;
+  display                : flex;
+  align-items            : center;
+  padding-left           : 1.5rem;
+  border-top-left-radius : 2rem;
+  background             : linear-gradient(to right, #eee, #eee 70%, white);
+  cursor                 : pointer;
+  user-select            : none;
 }

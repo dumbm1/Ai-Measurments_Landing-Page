@@ -1,6 +1,21 @@
+html {
+  height: 100%;
+}
+
+section {
+  height: 100%;
+}
+
 .body {
   font-family: "JetBrains Mono";
   background: white;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .body {
@@ -177,6 +192,8 @@
   padding-left: 1.5rem;
   border-top-left-radius: 2rem;
   background: linear-gradient(to right, #eee, #eee 70%, white);
+  cursor: pointer;
+  user-select: none;
 }
 
 .tutorial {
@@ -185,12 +202,23 @@
   background: lightskyblue;
 }
 
+.sign {
+  font-weight: 100;
+  color: white;
+  background: #2b2b2b;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .buy {
   background: #eee;
   text-align: center;
   height: 5rem;
   align-items: center;
   display: flex;
+  justify-content: center;
   font-size: 1.2rem;
 }
 
@@ -198,15 +226,4 @@
   background: black;
   color: white;
   border: none;
-}
-
-.footer {
-  font-weight: 100;
-  color: white;
-  background: black;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0.25rem -0.5rem 1rem 0.25rem rgba(0, 0, 0, 0.1);
 }

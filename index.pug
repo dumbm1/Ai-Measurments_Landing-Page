@@ -10,55 +10,58 @@ html(lang='en')
         title Extension Panel for Adobe&#174 Illustrator&#174, creating vector dimensions, Ai.measurments
 
     body(class='body')
+        section
+            .wrapper
+                section
 
-        include blocks/header
+                    include blocks/header
 
-        .container-xl.mt-4.mb-4
-            h3(class="description_h3" data-toggle="collapse" data-target="#collapse-learn-install" aria-expanded="false") Install & go!
+                    .container-xl.mt-5.mb-4
+                        h3(class="description_h3" data-toggle="collapse" data-target="#collapse-learn-install" aria-expanded="false") Install & go!
 
-        .container-xl
-            .row
-                .col
-                    div(class="collapse" id="collapse-learn-install")
+                    .container-xl
+                        .row
+                            .col
+                                div(class="collapse" id="collapse-learn-install")
 
-                        .row.align-items-center.mt-4.mb-4
-                            .description.col-xl-4
-                                include blocks/description__install_auto
-                            .description.col-xl-8
-                                include blocks/tutorial__install_auto
+                                    .row.align-items-center.mt-4.mb-4
+                                        .description.col-xl-4
+                                            include blocks/description__install_auto
+                                        .description.col-xl-8
+                                            include blocks/tutorial__install_auto
 
-                        .row.align-items-center.mt-4.mb-4
-                            .description.col-xl-4
-                                include blocks/description__install_manual
-                            .description.col-xl-8
-                                include blocks/tutorial__install_manual
+                                    .row.align-items-center.mt-4.mb-4
+                                        .description.col-xl-4
+                                            include blocks/description__install_manual
+                                        .description.col-xl-8
+                                            include blocks/tutorial__install_manual
 
-        .container-xl.mt-4.mb-4
-            h3(class="description_h3" data-toggle="collapse" data-target="#collapse-learn-enjoy" aria-expanded="false")
-                span.text-block Enjoy this
-                span.d-none.d-md-inline-block.d-lg-inline-block - save you time & brain cells
-                span !
+                    .container-xl.mt-4.mb-4
+                        h3(class="description_h3" data-toggle="collapse" data-target="#collapse-learn-enjoy" aria-expanded="false")
+                            span.text-block Enjoy this
+                            span.d-none.d-md-inline-block.d-lg-inline-block - save you time & brain cells
+                            span !
 
-        .container-xl
-            .row
-                .col
-                    div(class="collapse" id="collapse-learn-enjoy")
+                    .container-xl
+                        .row
+                            .col
+                                div(class="collapse" id="collapse-learn-enjoy")
 
-                        .row.align-items-center.mt-4.mb-4
-                            .description.col-xl-4
-                                include blocks/description__use_linear
-                            .description.col-xl-8
-                                include blocks/tutorial__use_linear
+                                    .row.align-items-center.mt-4.mb-4
+                                        .description.col-xl-4
+                                            include blocks/description__use_linear
+                                        .description.col-xl-8
+                                            include blocks/tutorial__use_linear
 
-                        .row.align-items-center.mt-4.mb-4
-                            .description.col-xl-4
-                                include blocks/description__use_radius_diameter
-                            .description.col-xl-8
-                                include blocks/tutorial__use_radius_diameter
+                                    .row.align-items-center.mt-4.mb-4
+                                        .description.col-xl-4
+                                            include blocks/description__use_radius_diameter
+                                        .description.col-xl-8
+                                            include blocks/tutorial__use_radius_diameter
 
-        include blocks/buy
+                div
 
-        include blocks/footer
+                include blocks/footer
 
         script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous")

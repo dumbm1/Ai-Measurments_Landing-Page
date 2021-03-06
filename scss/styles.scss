@@ -1,6 +1,21 @@
+html {
+  height : 100%;
+}
+
+section {
+  height : 100%;
+}
+
 .body {
   font-family : "JetBrains Mono";
   background  : white;
+  height      : 100%;
+}
+
+.wrapper {
+  min-height         : 100%;
+  display            : grid;
+  grid-template-rows : auto 1fr auto;
 }
 
 @import "misc";
@@ -8,6 +23,5 @@
 @import "header";
 @import "description";
 @import "tutorial";
-@import "buy";
 @import "footer";
 
