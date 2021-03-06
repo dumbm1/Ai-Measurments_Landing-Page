@@ -1,6 +1,6 @@
 .header {
   background : #eee;
-  box-shadow  : 0 .2rem .5rem .2rem rgb(0 0 0 / 20%);
+  box-shadow : 0 .2rem .5rem .2rem rgb(0 0 0 / 20%);
 }
 
 .header__logo {
@@ -8,22 +8,32 @@
   height      : 4.5rem;
   display     : flex;
   align-items : center;
+
 }
 
 .header__logo_logotype {
   font-size : 3.2rem;
+  @media (max-width : 575.98px) {
+   /* font-size   : 2.2rem;
+    font-weight : 900;*/
+    letter-spacing: -0.3rem;
+    transform: matrix(0.7, 0, 0, 1, -55, 0);
+    display: inline-block;
+  }
 }
 
 .header__logo_version {
-  font-size : 2rem;
-  align-self: center;
+  font-size  : 2rem;
+  align-self : center;
 }
 
 .header__menu {
   background : black;
   color      : white;
   font-size  : 1.3rem;
-
+  @media (max-width : 575.98px) {
+    //font-size : 1.1rem;
+  }
 }
 
 .header__menu_title {
@@ -31,9 +41,13 @@
   height      : 3rem;
   display     : flex;
   align-items : center;
-  .link{}
-  .link:hover{
-    text-decoration: underline;
+
+  @media (max-width : 575.98px) {
+    //font-weight : 400;
+  }
+
+  .link:hover {
+    text-decoration : underline;
   }
 }
 
