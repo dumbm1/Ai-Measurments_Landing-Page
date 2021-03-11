@@ -1,10 +1,12 @@
 footer
     .container-fluid.buy
         span.text-block.d-none.d-md-inline-block.d-lg-inline-block Try
-        a(href='https://forum.rudtp.ru/resources/measure-extension-panel.756/download' class='link link_button-black text-block' title="Download") demo
+        a(href='https://forum.rudtp.ru/resources/measure-extension-panel.756/download'
+            class='link link_button-black text-block' title="Download") demo
             //span.d-none.d-md-inline-block.d-lg-inline-block -version
         span.text-block.d-none.d-md-inline-block.d-lg-inline-block or Buy
-        a(href='https://allsoft.ru/software/independent-vendors/4544686/ai-measurments/' class='link link_button-black text-block' title='Buy on Allsoft site')
+        a(href='https://allsoft.ru/software/independent-vendors/4544686/ai-measurments/'
+            class='link link_button-black text-block' title='Buy on Allsoft site')
             span.text-block full version
             span.d-none.d-md-inline-block.d-lg-inline-block (~5 $USD)
         span.text-block.d-none.d-md-inline-block.d-lg-inline-block on the
@@ -13,32 +15,34 @@ footer
         span.d-none.d-md-inline-block.d-lg-inline-block partner website
     .container-fluid.sign
         span &#169 2021 Marat Shagiev
-        a(href="mailto:name@rapidtables.com?subject=YOUR_SUBJECT")
+        a(href="#" data-toggle="modal" data-target="#feedback_modal")
             img.img-feedback-mailto(src="img/envelope_w.svg")
-    //.container-fluid.sign
-    //    form(method="POST" action="https://forms.gle/9a8ntWtuSdFHEQif7" onsubmit="return window.submitGoogleForm(this);")
-    //        label name
-    //        input(name="entry.2345234")
-    //        button(type="submit") Submit
-    .container-fluid
-        iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSfgJ9cUwIxNxqsfBnq4PQl__FoGMoy5oH49ogPpGOPVXLC9ug/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0") Load...
-        //iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSfgJ9cUwIxNxqsfBnq4PQl__FoGMoy5oH49ogPpGOPVXLC9ug/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0") Load...
+        div(class="modal fade" id="feedback_modal" data-backdrop="static" data-keyboard="false"
+            tabindex="-1" role="dialog" aria-labelledby="feedback_form_label" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content.feedback-form-modal
+                    .modal-header.mb-3
+                        h4(class="modal-title" id="feedback_form_label") Feedback form
+                        button(type="button" class="btn-close" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") &times;
+                    .form-body
+                        form(action="https://docs.google.com/forms/d/e/1FAIpQLSfgJ9cUwIxNxqsfBnq4PQl__FoGMoy5oH49ogPpGOPVXLC9ug/formResponse"
+                            target="_self"
+                            id="feedback_form"
+                            method="POST")
+                            .form-group
+                                label(for="emailAddress") Your e-mail:
+                                input(id="emailAddress" type="email" name="emailAddress" class="form-control" required)
+                            .form-group
+                                label(for="2015729934") Your name:
+                                input(id="2015729934" type="text" name="entry.2015729934" class="form-control" required)
+                            .form-group
+                                label(for="1403511954") Your message:
+                                textarea(id="1403511954" name="entry.1403511954" class="form-control" rows="3" required)
+                            input(type="hidden" name="fvv" value="1")
+                            input(type="hidden" name="fbzx" value="1936383709036547657")
+                            input(type="hidden" name="pageHistory" value="0")
+                            .form-group.d-flex.justify-content-center
+                                input(type="submit" value="Submit")
+                    //.modal-footer.justify-content-center
 
-
-        //<form method="POST"
-        //action="https://forms.gle/9a8ntWtuSdFHEQif7"
-        //onsubmit="return window.submitGoogleForm(this);" >
-        //
-        //<label>name</label>
-        //<!-- view the form and inspect inputs to get the generated names.
-        // -->
-        //<input name="entry.2345234">
-        //
-        //<button type=submit>Submit</button>
-        //</form>
-        //
-        //<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgJ9cUwIxNxqsfBnq4PQl__FoGMoy5oH49ogPpGOPVXLC9ug/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-        //
-        //
-        //https://forms.gle/9a8ntWtuSdFHEQif7 короткая ссылка
-        //https://docs.google.com/forms/d/e/1FAIpQLSfgJ9cUwIxNxqsfBnq4PQl__FoGMoy5oH49ogPpGOPVXLC9ug/viewform?usp=sf_link

@@ -1,0 +1,20 @@
+.feedback-form-modal {
+  background    : white;
+  color         : black;
+  padding-left  : 1vh;
+  padding-right : 1vh;
+  border-radius : 0;
+
+  input, textarea {
+    border-radius : 0;
+  }
+
+  .modal-footer button {
+    padding-left  : 1.5vh;
+    padding-right : 1.5vh;
+  }
+
+  .modal-footer {
+    border : none;
+  }
+}

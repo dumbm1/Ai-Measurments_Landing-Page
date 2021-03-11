@@ -246,3 +246,21 @@ section {
   color: white;
   border: none;
 }
+
+.feedback-form-modal {
+  background: white;
+  color: black;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  border-radius: 0;
+}
+.feedback-form-modal input, .feedback-form-modal textarea {
+  border-radius: 0;
+}
+.feedback-form-modal .modal-footer button {
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+}
+.feedback-form-modal .modal-footer {
+  border: none;
+}
