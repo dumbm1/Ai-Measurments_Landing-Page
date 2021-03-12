@@ -27,22 +27,21 @@ footer
                             span(aria-hidden="true") &times;
                     .form-body
                         form(action="https://docs.google.com/forms/d/e/1FAIpQLSfgJ9cUwIxNxqsfBnq4PQl__FoGMoy5oH49ogPpGOPVXLC9ug/formResponse"
-                            target="_self"
-                            id="feedback_form"
-                            method="POST")
+                            target="_self" id="feedback_form" method="POST" class="needs-validation" novalidate)
                             .form-group
                                 label(for="emailAddress") Your e-mail:
-                                input(id="emailAddress" type="email" name="emailAddress" class="form-control" required)
+                                input(id="emailAddress" type="email" name="emailAddress" class="form-control email-address" required)
+                                .invalid-feedback Please provide a valid email
                             .form-group
                                 label(for="2015729934") Your name:
                                 input(id="2015729934" type="text" name="entry.2015729934" class="form-control" required)
+                                .invalid-feedback Please provide your name
                             .form-group
                                 label(for="1403511954") Your message:
-                                textarea(id="1403511954" name="entry.1403511954" class="form-control" rows="3" required)
+                                textarea(id="1403511954" name="entry.1403511954" class="form-control" rows="5" required)
+                                .invalid-feedback Please write your message
                             input(type="hidden" name="fvv" value="1")
                             input(type="hidden" name="fbzx" value="1936383709036547657")
                             input(type="hidden" name="pageHistory" value="0")
                             .form-group.d-flex.justify-content-center
-                                input(type="submit" value="Submit")
-                    //.modal-footer.justify-content-center
-
+                                input(type="submit" value="Submit" class="btn-submit")
