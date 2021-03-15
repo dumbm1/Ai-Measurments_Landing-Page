@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Extension Panel for Adobe Illustrator, that make vector dimensions and measurments</title>
+    <title>Панель расширения для Adobe Illustrator, которая создает размерные линии</title>
   </head>
   <body class="body">
     <section>
@@ -17,13 +17,15 @@
             </div>
             <div class="header__menu">
               <div class="container-xl d-flex justify-content-between">
-                <div class="header__menu_title"><a class="link link_black" href="https://www.adobe.com/products/illustrator.html" title="www.adobe.com/products/illustrator.html"><span class="d-none d d-sm-inline-block d-lg-inline-block d-xl-inline-block text-block">Adobe&#174 Illustrator&#174</span><span class="d-inline-block d-sm-none d-md-none d-lg-none d-xl-none text-block">AI</span></a><a class="link link_black" href="https://www.adobe.com/devnet/creativesuite/cs-extension-builder.html" title="www.adobe.com/devnet/creativesuite/cs-extension-builder.html"><span class="d-none d-md-inline-block d-lg-inline-block d-xl-inline-block">Extention Panel</span><span class="d-inline-block d-sm-inline-block d-md-none d-lg-none d-xl-none">Extension</span></a></div>
-                <div class="header__menu_lang"><a class="link link_black" href="#">Ru</a><a class="link link_black active" href="#">En</a></div>
+                <div class="header__menu_title">
+                  <!--a(class='link link_black' href='https://www.adobe.com/products/illustrator.html' title='www.adobe.com/products/illustrator.html')--><span class="d-none d d-sm-inline-block d-lg-inline-block d-xl-inline-block text-block">Adobe&#174 Illustrator&#174</span><span class="d-inline-block d-sm-none d-md-none d-lg-none d-xl-none text-block">AI</span>
+                  <!--a(class='link link_black' href='https://www.adobe.com/devnet/creativesuite/cs-extension-builder.html' title='www.adobe.com/devnet/creativesuite/cs-extension-builder.html')--><span class="d-none d-md-inline-block d-lg-inline-block d-xl-inline-block">Extention Panel</span><span class="d-inline-block d-sm-inline-block d-md-none d-lg-none d-xl-none">Extension</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="container-xl mt-5 mb-4">
-            <h3 class="description_h3" data-toggle="collapse" data-target="#collapse-learn-install" aria-expanded="false">Install & go!</h3>
+            <h3 class="description_h3" data-toggle="collapse" data-target="#collapse-learn-install" aria-expanded="false">Установите</h3>
           </div>
           <div class="container-xl">
             <div class="row">
@@ -31,11 +33,12 @@
                 <div class="collapse" id="collapse-learn-install">
                   <div class="row align-items-center mt-4 mb-4">
                     <div class="description col-xl-4">
-                      <h4>It's easy - autoinstall!</h4>
+                      <h4>Автоустановка</h4>
                       <ul>
-                        <li><span class="text-block">Install</span><a class="link link_black" href="https://zxpinstaller.com/" title="https://zxpinstaller.com/">ZXPInstaller</a>, and run it</li>
-                        <li>Drag'n'Drop the ai_measurments_1.0.0.zxp to ZXPInstaller window</li>
-                        <li>Refrash the Illustrator, enjoy!</li>
+                        <li><span class="text-block">Установите</span><a class="link link_black" href="https://zxpinstaller.com/" title="https://zxpinstaller.com/">ZXPInstaller</a><span class="the-note d-block">по завершению процесса установки снимите флаг "Запустить ZXPInstaller" и закройте окно установщика</span></li>
+                        <li>Теперь запустите ZXPInstaller</li>
+                        <li>Перетащите файл ai_measurments_1.0.0.zxp  в окно ZXPInstaller</li>
+                        <li>Перезагрузите Иллюстратор, пользуйтесь!</li>
                       </ul>
                     </div>
                     <div class="description col-xl-8">
@@ -46,29 +49,29 @@
                   </div>
                   <div class="row align-items-center mt-4 mb-4">
                     <div class="description col-xl-4">
-                      <h4>For advenced and courage - manual installation!</h4>
+                      <h4>Для продвинутых и бесстрашных - ручная установка!</h4>
                       <ul>
-                        <li>Rename ai_measurments_1.0.0.zxp to ai_measurments_1.0.0.zip</li>
-                        <li>Unpack zip-archive to folder ai_measurments_1.0.0</li>
-                        <li>Drag'n'Drop the folder ai_measurments_1.0.0 to one of that paths:
+                        <li>Переименуйте ai_measurments_1.0.0.zxp в ai_measurments_1.0.0.zip</li>
+                        <li>Распакуйте zip-archive в папку ai_measurments_1.0.0</li>
+                        <li>Переместите папку ai_measurments_1.0.0 по одному из следующих путей:
                           <ul>
                             <li>
-                              <h6> for all users:</h6>
+                              <h6> для всех пользователей:</h6>
                               <ul>
-                                <li>win(x64): C:\Program Files (x86)\Common Files\Adobe\CEP\extensions, or C:\Program Files\Common Files\Adobe\CEP\extensions</li>
+                                <li>win(x64): C:\Program Files (x86)\Common Files\Adobe\CEP\extensions, или C:\Program Files\Common Files\Adobe\CEP\extensions</li>
                                 <li>macOS: /Library/Application Support/Adobe/CEP/extensions</li>
                               </ul>
                             </li>
                             <li>
-                              <h6>for one user:</h6>
+                              <h6>для одного пользователя:</h6>
                               <ul>
-                                <li>win: C:\Users\USERNAME\AppData\ Roaming\Adobe\CEP\extensions</li>
+                                <li>win: C:\Users\<ИМЯ ПОЛЬЗОВАТЕЛЯ>\AppData\ Roaming\Adobe\CEP\extensions</li>
                                 <li>macOS: ~/Library/Application Support/Adobe/CEP/extensions</li>
                               </ul>
                             </li>
                           </ul>
                         </li>
-                        <p class="the-note">Path 'CEP\extensions' does not exists? You must make that folders manualy.</p>
+                        <p class="the-note">Папка 'CEP\extensions' не существует? Чтож, тогда просто создаем ее вручную.</p>
                       </ul>
                     </div>
                     <div class="description col-xl-8">
@@ -82,7 +85,7 @@
             </div>
           </div>
           <div class="container-xl mt-4 mb-4">
-            <h3 class="description_h3" data-toggle="collapse" data-target="#collapse-learn-enjoy" aria-expanded="false"><span class="text-block">Enjoy this</span><span class="d-none d-md-inline-block d-lg-inline-block">- save you time & brain cells</span><span>!</span></h3>
+            <h3 class="description_h3" data-toggle="collapse" data-target="#collapse-learn-enjoy" aria-expanded="false">Пользуйтесь</h3>
           </div>
           <div class="container-xl">
             <div class="row">
@@ -90,10 +93,10 @@
                 <div class="collapse" id="collapse-learn-enjoy">
                   <div class="row align-items-center mt-4 mb-4">
                     <div class="description col-xl-4">
-                      <h4>Linear measurments lines:</h4>
+                      <h4>Как проставить линейные размеры:</h4>
                       <ul>
-                        <li>Select you object that need to measure</li>
-                        <li>Push the one of that buttons L (left), R (right), T (top), B (buttom)</li>
+                        <li>Выделите один или несколько объектов</li>
+                        <li>Нажмите одну из кнопок на панели: L (left), R (right), T (top), B (buttom)</li>
                       </ul>
                     </div>
                     <div class="description col-xl-8">
@@ -104,10 +107,10 @@
                   </div>
                   <div class="row align-items-center mt-4 mb-4">
                     <div class="description col-xl-4">
-                      <h4>Radius & Diameter:</h4>
+                      <h4>Радиус и диаметр:</h4>
                       <ul>
-                        <li>Select a circle which you want to measure.</li>
-                        <li>Push the one of that buttons r (radius), D (diameter)</li>
+                        <li>Выделите окружность</li>
+                        <li>Нажмите кнопку r (radius) или D (diameter)</li>
                       </ul>
                     </div>
                     <div class="description col-xl-8">
@@ -116,24 +119,15 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container-xl mt-4 mb-4">
-            <h3 class="description_h3" data-toggle="collapse" data-target="#collapse-learn-extand" aria-expanded="false"><span class="d-none d-sm-inline-block d-lg-inline-block d-xl-inline-block">Go deep down...</span><span class="d-inline-block d-sm-none d-md-none d-lg-none d-xl-none">Go deep..</span></h3>
-          </div>
-          <div class="container-xl">
-            <div class="row">
-              <div class="col">
-                <div class="collapse" id="collapse-learn-extand">
                   <div class="row align-items-center mt-4 mb-4">
                     <div class="description col-xl-4">
-                      <h4>How make markup dimensions between two objects?</h4>
+                      <h4>Как проставить размер между двумя объектами?</h4>
                       <ul>
-                        <li>Select two targets</li>
+                        <li>Выделите два объекта</li>
                         <li>Hold down the Crtl/Cmd key and click the some size button</li>
-                        <li>Optionally: while still holding Crtl/Cmd adjust the markup options</li>
+                        <li>Нажмите и удерживайте клавишу Crtl/Cmd</li>
+                        <li>Проставьте нужный линейный размер (кнопки L,R,T,B)</li>
+                        <li>Дополнительно: все еще удерживая клавишу Crtl/Cmd измените параметры разметки</li>
                       </ul>
                     </div>
                     <div class="description col-xl-8">
@@ -146,35 +140,85 @@
               </div>
             </div>
           </div>
+          <div class="container-xl mt-4 mb-4">
+            <h3 class="description_h3" data-toggle="collapse" data-target="#collapse-learn-settings" aria-expanded="false">Настраивайте</h3>
+          </div>
+          <div class="container-xl">
+            <div class="row">
+              <div class="col">
+                <div class="collapse" id="collapse-learn-settings">
+                  <div class="row align-items-center mt-4 mb-4">
+                    <div class="description col-xl-4">
+                      <h4>Изменяйте параметры разметки:</h4>
+                      <ul>
+                        <li>...</li>
+                        <li>...</li>
+                      </ul>
+                    </div>
+                    <div class="description col-xl-8">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/517840983" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-xl mt-4 mb-4">
+            <h3 class="description_h3" data-toggle="collapse" data-target="#collapse-learn-presets" aria-expanded="false">Сохраняйте</h3>
+          </div>
+          <div class="container-xl">
+            <div class="row">
+              <div class="col">
+                <div class="collapse" id="collapse-learn-presets">
+                  <div class="row align-items-center mt-4 mb-4">
+                    <div class="description col-xl-4">
+                      <h4>Сохраняйте настройки в именованные наборы:</h4>
+                      <ul>
+                        <li>...</li>
+                        <li>...</li>
+                      </ul>
+                    </div>
+                    <div class="description col-xl-8">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/517840983" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <div></div>
         <footer>
-          <div class="container-fluid buy"><span class="text-block d-none d-md-inline-block d-lg-inline-block">Try</span><a class="link link_button-black text-block" href="https://forum.rudtp.ru/resources/measure-extension-panel.756/download" title="Download">demo
-              <!--span.d-none.d-md-inline-block.d-lg-inline-block -version--></a><span class="text-block d-none d-md-inline-block d-lg-inline-block">or Buy</span><a class="link link_button-black text-block" href="https://allsoft.ru/software/independent-vendors/4544686/ai-measurments/" title="Buy on Allsoft site"><span class="text-block">full version</span><span class="d-none d-md-inline-block d-lg-inline-block">(~5 $USD)</span></a><span class="text-block d-none d-md-inline-block d-lg-inline-block">on the</span><a class="link link_black" href="https://allsoft.ru/" title="Allsoft.ru website"><span class="text-block link_black d-none d-md-inline-block d-lg-inline-block">Allsoft</span></a><span class="d-none d-md-inline-block d-lg-inline-block">partner website</span></div>
-          <div class="container-fluid sign"><span>&#169 2021 Marat Shagiev</span><a href="#" data-toggle="modal" data-target="#feedback_modal"><img class="img-feedback-mailto" src="img/envelope_w.svg"></a>
+          <div class="container-fluid buy"><span class="text-block d-none d-md-inline-block d-lg-inline-block">Попробуйте</span><a class="link link_button-black text-block" href="https://forum.rudtp.ru/resources/measure-extension-panel.756/download" title="Download">демо
+              <!--span.d-none.d-md-inline-block.d-lg-inline-block -version--></a><span class="text-block d-none d-md-inline-block d-lg-inline-block">или купите</span><a class="link link_button-black text-block" href="https://allsoft.ru/software/independent-vendors/4544686/ai-measurments/" title="Buy on Allsoft site"><span class="d-block d-md-none">Полная версия</span><span class="d-none d-md-inline-block d-lg-inline-block text-block">полную версию</span><span class="d-none d-md-inline-block d-lg-inline-block">(~5 $USD)</span></a><span class="text-block d-none d-md-inline-block d-lg-inline-block">на</span><a class="link link_black" href="https://allsoft.ru/" title="Allsoft.ru website"><span class="text-block link_black d-none d-md-inline-block d-lg-inline-block">Allsoft</span></a></div>
+          <div class="container-fluid sign"><span>&#169 2021 Марат Шагиев</span><a href="#" data-toggle="modal" data-target="#feedback_modal"><img class="img-feedback-mailto" src="img/envelope_w.svg"></a>
             <div class="modal fade" id="feedback_modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="feedback_form_label" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content feedback-form-modal">
                   <div class="modal-header mb-3">
-                    <h4 class="modal-title" id="feedback_form_label">Feedback form</h4>
+                    <h4 class="modal-title" id="feedback_form_label">Форма обратной связи</h4>
                     <button class="btn-close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                   </div>
                   <div class="form-body">
                     <form class="needs-validation" action="https://docs.google.com/forms/d/e/1FAIpQLSfgJ9cUwIxNxqsfBnq4PQl__FoGMoy5oH49ogPpGOPVXLC9ug/formResponse" target="_self" id="feedback_form" method="POST" novalidate>
                       <div class="form-group">
-                        <label for="emailAddress">Your e-mail:</label>
+                        <label for="emailAddress">Ваш e-mail:</label>
                         <input class="form-control email-address" id="emailAddress" type="email" name="emailAddress" required>
-                        <div class="invalid-feedback">Please provide a valid email</div>
+                        <div class="invalid-feedback">Пожалуйста, укажите свой контактный e-mail</div>
                       </div>
                       <div class="form-group">
-                        <label for="2015729934">Your name:</label>
+                        <label for="2015729934">Ваше имя:</label>
                         <input class="form-control" id="2015729934" type="text" name="entry.2015729934" required>
-                        <div class="invalid-feedback">Please provide your name</div>
+                        <div class="invalid-feedback">Пожалуйста, укажите свое имя</div>
                       </div>
                       <div class="form-group">
-                        <label for="1403511954">Your message:</label>
+                        <label for="1403511954">Ваше сообщение:</label>
                         <textarea class="form-control" id="1403511954" name="entry.1403511954" rows="5" required></textarea>
-                        <div class="invalid-feedback">Please write your message</div>
+                        <div class="invalid-feedback">Пожалуйста, напишите сообщение</div>
                       </div>
                       <input type="hidden" name="fvv" value="1">
                       <input type="hidden" name="fbzx" value="1936383709036547657">

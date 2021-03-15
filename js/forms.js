@@ -20,7 +20,7 @@ $('#feedback_form').submit(function (event) {
     .ajaxSubmit({
                   data: extraData, dataType: 'jsonp',
                   error: function () {
-                    alert('Form Submitted. Thanks.');
+                    alert('Ваше сообщение отправлено. Спасибо!');
                   }
                 });
   $('#feedback_form').addClass('was-validated');
