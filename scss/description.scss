@@ -21,7 +21,7 @@
   word-break : break-all;
 }
 
-.description_h3 {
+.description_h3, .description_h3_copy {
   height                 : 2rem;
   display                : flex;
   align-items            : center;
@@ -30,4 +30,25 @@
   background             : linear-gradient(to right, #eee, #eee 70%, white);
   cursor                 : pointer;
   user-select            : none;
+}
+
+/*
+.description_h3::after  {
+  margin-left : 1vw;
+  content     : '🡣'; // 🡡
+}
+
+.description_h3_copy::after {
+  margin-left : 1vw;
+  content     : '🡡'; // 🡣
+}*/
+
+.description_h3__icon {
+  margin-left : 1vw;
+  display     : inline-block;
+  transition  : transform .3s;
+}
+
+.description_h3__icon.active {
+  transform : rotate(-180deg);
 }
