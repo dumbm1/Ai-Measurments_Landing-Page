@@ -94,6 +94,12 @@ section {
   font-weight: 900;
   font-style: bold;
 }
+@font-face {
+  font-family: "Segoe UI Symbol";
+  src: url("fonts/Segoe UI Symbol/Segoe UI Symbol.ttf") format("truetype"), url("fonts/Segoe UI Symbol/Segoe UI Symbol.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 .header {
   box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
   border-bottom-right-radius: 2rem;
@@ -224,6 +230,9 @@ section {
   margin-left: 1vw;
   display: inline-block;
   transition: transform 0.3s;
+  font-family: "Segoe UI Symbol";
+  font-weight: 400;
+  font-style: normal;
 }
 
 .description_h3__icon.active {
