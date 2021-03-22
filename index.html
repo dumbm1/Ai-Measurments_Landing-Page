@@ -96,7 +96,14 @@
                       <h4>Как проставить линейные размеры:</h4>
                       <ul>
                         <li>Выделите один или несколько объектов</li>
-                        <li>Нажмите одну из кнопок на панели: L (left), R (right), T (top), B (buttom)</li>
+                        <li>Нажмите одну из кнопок на панели и создайте:
+                          <ul>
+                            <li><span class="label-face-elem">T (Top)</span><span>- ширину объекта(ов), при этом разметка генерируется сверху от объекта</span></li>
+                            <li><span class="label-face-elem">L (Left)</span><span>- высоту, разметка слева</span></li>
+                            <li><span class="label-face-elem">R (Right)</span><span>- высоту, разметка справа</span></li>
+                            <li><span class="label-face-elem">B (Bottom)</span><span>- ширину, разметка снизу</span></li>
+                          </ul>
+                        </li>
                       </ul>
                     </div>
                     <div class="description col-xl-8">
@@ -124,7 +131,6 @@
                       <h4>Как проставить размер между двумя объектами?</h4>
                       <ul>
                         <li>Выделите два объекта</li>
-                        <li>Hold down the Crtl/Cmd key and click the some size button</li>
                         <li>Нажмите и удерживайте клавишу Crtl/Cmd</li>
                         <li>Проставьте нужный линейный размер (кнопки L,R,T,B)</li>
                         <li>Дополнительно: все еще удерживая клавишу Crtl/Cmd измените параметры разметки</li>
@@ -149,10 +155,36 @@
                 <div class="collapse" id="collapse-learn-settings">
                   <div class="row align-items-center mt-4 mb-4">
                     <div class="description col-xl-4">
-                      <h4>Изменяйте параметры разметки:</h4>
+                      <h4>Изменяйте параметры разметки</h4>
                       <ul>
-                        <li>...</li>
-                        <li>...</li>
+                        <li>
+                          <h5>На вкладке<span class="description_h5_accent"> Base</span></h5>
+                          <ul>
+                            <li>Флаг<span class="label-face-elem">Add units (mm)</span><span>- к цифровому значению размера добавляется обозначение доступной единицы измерения - mm</span></li>
+                            <li>Список значений<span class="label-face-elem">Precission</span><span>- выбирайте точность значения измеряемых объектов в пределах от одного до трех знаков после запятой</span></li>
+                            <li>Флаг<span class="label-face-elem">Layer</span><span>- использовать отдельный слой для разметки.</span>
+                              <p>Если же флаг снять, то разметка будет добавляться на тот же слой, где находится измеряемый объект</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h5>На вкладке<span class="description_h5_accent"> Geometry</span><span> изменяйте:</span></h5>
+                          <ul>
+                            <li><span class="label-face-elem">Stroke</span><span>- толщину обводки</span></li>
+                            <li><span class="label-face-elem">Gap</span><span>- пробел между цифровым значением и линией</span></li>
+                            <li><span class="label-face-elem">Indent</span><span>- расстояние разметки до объекта</span></li>
+                            <li><span class="label-face-elem">Arrow</span><span>- размер стрелки (относительно ее длинны)</span></li>
+                            <li><span class="label-face-elem">Scale (%)</span><span>- масштаб разметки относительно реального размера объекта</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h5>На вкладке<span class="description_h5_accent"> Color&Font</span><span> изменяйте:</span></h5>
+                          <ul>
+                            <li>Флаг<span class="label-face-elem">Color</span><span>- цвет разметки (CMYK)</span></li>
+                            <li><span class="label-face-elem">Font size</span><span>- кегль шрифта (pt)</span></li>
+                            <li><span class="label-face-elem">Font</span><span>- гарнитуру и начертание шрифта</span></li>
+                          </ul>
+                        </li>
                       </ul>
                     </div>
                     <div class="description col-xl-8">
@@ -176,8 +208,21 @@
                     <div class="description col-xl-4">
                       <h4>Сохраняйте настройки в именованные наборы:</h4>
                       <ul>
-                        <li>...</li>
-                        <li>...</li>
+                        <li>Отрегулируйте параметры разметки</li>
+                        <li>Нажмите кнопку<span class="label-face-elem">Edit presets</span></li>
+                        <li>В диалоговом окне<span class="label-face-elem">Presets</span><span>в текстовом поле введите имя набора и нажмите кнопку</span><span class="label-face-elem">Add Preset</span></li>
+                      </ul>
+                      <h4>Примените сохраненный набор:</h4>
+                      <ul>
+                        <li>Выделите объект</li>
+                        <li>Проставьте нужный размер</li>
+                        <li>Из выпадающего списка<span class="label-face-elem">Presets</span><span>выберите нужный именованный рабор</span></li>
+                        <li>Вуаля! - Выбранный набор настроек применился к текущей разметке</li>
+                      </ul>
+                      <h4>Удалите лишние наборы:</h4>
+                      <ul>
+                        <li>В диалоговом окне<span class="label-face-elem">Presets</span><span>кликните крестик справа от имени набора, который надо удалить</span></li>
+                        <li>во всплывающем окне подтвердите удаление</li>
                       </ul>
                     </div>
                     <div class="description col-xl-8">
