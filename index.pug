@@ -16,84 +16,87 @@ html(lang='ru')
 
                     include blocks/header
 
-                    .container-xl.mt-5.mb-4
+                    .container-xl.description-container(style="margin-top:3.5rem")
                         h3(class="description_h3" data-toggle="collapse" data-target="#collapse-learn-install" aria-expanded="false")
                             span Установите
                             img(src="img/arrow-down.svg").description_h3__icon
 
-                    .container-xl
-                        .row
-                            .col
-                                div(class="collapse" id="collapse-learn-install")
+                        .container-xl(style="border-left: 1px solid #eee; border-bottom-left-radius : 2rem;")
+                            .row
+                                .col
+                                    div(class="collapse" id="collapse-learn-install")
 
-                                    .row.align-items-center.mt-4.mb-4
-                                        .description.col-xl-4
-                                            include blocks/description__install_auto
-                                        .description.col-xl-8
-                                            include blocks/tutorial__install_auto
+                                        .row.align-items-center.mt-4.mb-4
+                                            .description.col-xl-4
+                                                include blocks/description__install_auto
+                                            .description.col-xl-8
+                                                include blocks/tutorial__install_auto
 
-                                    .row.align-items-center.mt-4.mb-4
-                                        .description.col-xl-4
-                                            include blocks/description__install_manual
-                                        .description.col-xl-8
-                                            include blocks/tutorial__install_manual
+                                        .row.align-items-center.mt-4.mb-4
+                                            .description.col-xl-4
+                                                include blocks/description__install_manual
+                                            .description.col-xl-8
+                                                include blocks/tutorial__install_manual
 
-                    .container-xl.mt-4.mb-4
+                    .container-xl.description-container
                         h3(class="description_h3" data-toggle="collapse" data-target="#collapse-learn-enjoy" aria-expanded="false")
                             span Пользуйтесь
                             img(src="img/arrow-down.svg").description_h3__icon
-                    .container-xl
-                        .row
-                            .col
-                                div(class="collapse" id="collapse-learn-enjoy")
 
-                                    .row.align-items-center.mt-4.mb-4
-                                        .description.col-xl-4
-                                            include blocks/description__use_linear
-                                        .description.col-xl-8
-                                            include blocks/tutorial__use_linear
+                        .container-xl(style="border-left: 1px solid #eee; border-bottom-left-radius : 2rem;")
+                            .row
+                                .col
+                                    div(class="collapse" id="collapse-learn-enjoy")
 
-                                    .row.align-items-center.mt-4.mb-4
-                                        .description.col-xl-4
-                                            include blocks/description__use_radius_diameter
-                                        .description.col-xl-8
-                                            include blocks/tutorial__use_radius_diameter
+                                        .row.align-items-center.mt-4.mb-4
+                                            .description.col-xl-4
+                                                include blocks/description__use_linear
+                                            .description.col-xl-8
+                                                include blocks/tutorial__use_linear
 
-                                    .row.align-items-center.mt-4.mb-4
-                                        .description.col-xl-4
-                                            include blocks/description__use_between2objects
-                                        .description.col-xl-8
-                                            include blocks/tutorial__use_between2objects
+                                        .row.align-items-center.mt-4.mb-4
+                                            .description.col-xl-4
+                                                include blocks/description__use_radius_diameter
+                                            .description.col-xl-8
+                                                include blocks/tutorial__use_radius_diameter
 
-                    .container-xl.mt-4.mb-4
+                                        .row.align-items-center.mt-4.mb-4
+                                            .description.col-xl-4
+                                                include blocks/description__use_between2objects
+                                            .description.col-xl-8
+                                                include blocks/tutorial__use_between2objects
+
+                    .container-xl.description-container
                         h3(class="description_h3" data-toggle="collapse" data-target="#collapse-learn-settings" aria-expanded="false")
                             span Настраивайте
                             img(src="img/arrow-down.svg").description_h3__icon
-                    .container-xl
-                        .row
-                            .col
-                                div(class="collapse" id="collapse-learn-settings")
 
-                                    .row.align-items-center.mt-4.mb-4
-                                        .description.col-xl-4
-                                            include blocks/description__use_settings
-                                        .description.col-xl-8
-                                            include blocks/tutorial__use_settings
+                        .container-xl(style="border-left: 1px solid #eee; border-bottom-left-radius : 2rem;")
+                            .row
+                                .col
+                                    div(class="collapse" id="collapse-learn-settings")
 
-                    .container-xl.mt-4.mb-4
+                                        .row.align-items-center.mt-4.mb-4
+                                            .description.col-xl-4
+                                                include blocks/description__use_settings
+                                            .description.col-xl-8
+                                                include blocks/tutorial__use_settings
+
+                    .container-xl.description-container
                         h3(class="description_h3" data-toggle="collapse" data-target="#collapse-learn-presets" aria-expanded="false")
                             span Сохраняйте
                             img(src="img/arrow-down.svg").description_h3__icon
-                    .container-xl
-                        .row
-                            .col
-                                div(class="collapse" id="collapse-learn-presets")
 
-                                    .row.align-items-center.mt-4.mb-4
-                                        .description.col-xl-4
-                                            include blocks/description__use_presets
-                                        .description.col-xl-8
-                                            include blocks/tutorial__use_presets
+                        .container-xl(style="border-left: 1px solid #eee; border-bottom-left-radius : 2rem;")
+                            .row
+                                .col
+                                    div(class="collapse" id="collapse-learn-presets")
+
+                                        .row.align-items-center.mt-4.mb-4
+                                            .description.col-xl-4
+                                                include blocks/description__use_presets
+                                            .description.col-xl-8
+                                                include blocks/tutorial__use_presets
 
 
                 div

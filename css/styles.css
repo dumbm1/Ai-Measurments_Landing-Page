@@ -185,6 +185,11 @@ section {
 
 /*** ze end ***/
 /**************/
+.description-container {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .description {
   font-weight: 100;
   font-style: normal;
