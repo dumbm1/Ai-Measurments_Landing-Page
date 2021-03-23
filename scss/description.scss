@@ -32,23 +32,12 @@
   user-select            : none;
 }
 
-/*
-.description_h3::after  {
-  margin-left : 1vw;
-  content     : '🡣'; // 🡡
-}
-
-.description_h3_copy::after {
-  margin-left : 1vw;
-  content     : '🡡'; // 🡣
-}*/
-
 .description_h3__icon {
   margin-left : 1vw;
   display     : inline-block;
   transition  : transform .3s;
-  font-family: "Segoe UI Symbol";
-  font-weight: 400;
+  font-family: "Segoe UI Symbol" !important;
+  font-weight: 300;
   font-style: normal;
 }
 

@@ -96,7 +96,7 @@ section {
 }
 @font-face {
   font-family: "Segoe UI Symbol";
-  src: url("fonts/Segoe UI Symbol/Segoe UI Symbol.ttf") format("truetype"), url("fonts/Segoe UI Symbol/Segoe UI Symbol.woff2") format("woff2");
+  src: url("fonts/Segoe_UI_Symbol/Segoe_UI_Symbol.ttf") format("truetype"), url("fonts/Segoe_UI_Symbol/Segoe_UI_Symbol.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -216,22 +216,12 @@ section {
   user-select: none;
 }
 
-/*
-.description_h3::after  {
-  margin-left : 1vw;
-  content     : '🡣'; // 🡡
-}
-
-.description_h3_copy::after {
-  margin-left : 1vw;
-  content     : '🡡'; // 🡣
-}*/
 .description_h3__icon {
   margin-left: 1vw;
   display: inline-block;
   transition: transform 0.3s;
-  font-family: "Segoe UI Symbol";
-  font-weight: 400;
+  font-family: "Segoe UI Symbol" !important;
+  font-weight: 300;
   font-style: normal;
 }
 
