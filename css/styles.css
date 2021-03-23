@@ -220,13 +220,19 @@ section {
   margin-left: 1vw;
   display: inline-block;
   transition: transform 0.3s;
-  font-family: "Segoe" !important;
-  font-weight: 400;
-  font-style: normal;
+  /*
+    font-family : "Segoe" !important;
+    font-weight : 400;
+    font-style  : normal;*/
+  height: 1.2rem;
+  width: 1.2rem;
+  padding-top: 0.1rem;
 }
 
 .description_h3__icon.active {
   transform: rotate(-180deg);
+  padding-bottom: 0.1rem;
+  padding-top: 0;
 }
 
 .label-face-elem {
@@ -241,10 +247,6 @@ section {
 
 .description_h5_accent {
   font-weight: 900;
-}
-
-.description-content {
-  border-left: 1px solid #ccc;
 }
 
 .tutorial {
