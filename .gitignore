@@ -1,15 +1,15 @@
-*~
-/.idea
-*.ini
-test.*
-test_*.*
-/sourse/*
-*.css
-*.html
-/rm
-/css/*.css
-/blocks/*.html
-css/*.css
-blocks/*.html
-!index.html
-!css/styles.css
+# Файлы и папки операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы редактора
+.idea
+*.sublime*
+.vscode
+
+# Вспомогательные файлы
+*.log*
+node_modules/
+
+# Папка с собранными файлами проекта
+# build/

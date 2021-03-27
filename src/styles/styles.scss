@@ -1,0 +1,27 @@
+html {
+  height : 100%;
+}
+
+section {
+  height : 100%;
+}
+
+.body {
+  font-family : "JetBrains Mono";
+  background  : white;
+  height      : 100%;
+}
+
+.wrapper {
+  min-height         : 100%;
+  display            : grid;
+  grid-template-rows : auto 1fr auto;
+}
+
+@import "common/misc";
+@import "common/fonts";
+@import "common/header";
+@import "common/description";
+@import "common/tutorial";
+@import "common/footer";
+@import "common/forms";
