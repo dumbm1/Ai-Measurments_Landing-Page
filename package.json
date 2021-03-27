@@ -19,8 +19,12 @@
   "homepage": "https://github.com/dumbm1/Ai-Measurments_Landing-Page#readme",
   "devDependencies": {
     "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-npm-dist": "^1.0.3",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",

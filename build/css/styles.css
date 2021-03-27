@@ -1,0 +1,311 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+}
+
+section {
+  height: 100%;
+}
+
+.body {
+  font-family: "JetBrains Mono";
+  background: white;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.body {
+  padding-top: 5rem;
+}
+
+.the-note::before {
+  content: "ВАЖНО:";
+  background-color: #4c4c4c;
+  color: white;
+  font-weight: 900;
+  margin-right: 0.5rem;
+  display: inline-block;
+  padding: 0;
+  padding-left: 0.2rem;
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.link_black {
+  color: black;
+}
+
+.link_black:hover {
+  color: black;
+}
+
+.link_button-black {
+  background: black;
+  color: white;
+  padding: 0.1rem 0.5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.link_button-black:hover {
+  background: black;
+  color: white;
+}
+
+.text-block {
+  margin-right: 0.5rem;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf") format("truetype"), url("fonts/JetBrainsMono/webfonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono/ttf/JetBrainsMono-Thin.ttf") format("truetype"), url("fonts/JetBrainsMono/webfonts/JetBrainsMono-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono/ttf/JetBrainsMono-Bold.ttf") format("truetype"), url("fonts/JetBrainsMono/webfonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: bold;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono/ttf/JetBrainsMono-ExtraBold.ttf") format("truetype"), url("fonts/JetBrainsMono/webfonts/JetBrainsMono-ExtraBold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Segoe";
+  src: url("fonts/Segoe_UI_Symbol/Segoe_UI_Symbol.ttf") format("truetype"), url("fonts/Segoe_UI_Symbol/Segoe_UI_Symbol.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.header__logo {
+  font-weight: 100;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  background: #2b2b2b;
+  color: white;
+}
+
+.header__logo_logotype {
+  font-size: 3.2rem;
+  color: white;
+  font-weight: 100;
+}
+@media (max-width: 575.98px) {
+  .header__logo_logotype {
+    /* font-size   : 2.2rem;
+     font-weight : 900;*/
+    letter-spacing: -0.3rem;
+    transform: matrix(0.9, 0, 0, 1, -17, 0);
+    display: inline-block;
+  }
+}
+
+.header__logo_version {
+  font-size: 2rem;
+  align-self: center;
+}
+
+.header__menu {
+  background: white;
+  color: black;
+  font-size: 1.3rem;
+}
+.header__menu_title {
+  font-weight: 100;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.header__menu_title .link:hover {
+  text-decoration: underline;
+}
+
+.header__menu_lang {
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+}
+.header__menu_lang .active {
+  font-weight: 900;
+  font-style: bold;
+}
+.header__menu_lang .link:hover {
+  text-decoration: underline;
+}
+
+/***************************/
+/*** navbar smart scroll ***/
+.smart-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+/*** ze end ***/
+/**************/
+.description-container {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.description {
+  font-weight: 100;
+  font-style: normal;
+  overflow: auto;
+}
+.description ul {
+  padding-left: 1rem;
+}
+.description .link {
+  font-weight: normal;
+}
+.description .link:hover {
+  text-decoration: underline;
+}
+
+.break {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.description_h3, .description_h3_copy {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  border-top-left-radius: 2rem;
+  background: linear-gradient(to right, #eee, #eee 70%, white);
+  cursor: pointer;
+  user-select: none;
+}
+
+.description_h3__icon {
+  margin-left: 1vw;
+  display: inline-block;
+  transition: transform 0.3s;
+  /*
+    font-family : "Segoe" !important;
+    font-weight : 400;
+    font-style  : normal;*/
+  height: 1.2rem;
+  width: 1.2rem;
+  padding-top: 0.1rem;
+}
+
+.description_h3__icon.active {
+  transform: rotate(-180deg);
+  padding-bottom: 0.1rem;
+  padding-top: 0;
+}
+
+.label-face-elem {
+  background: #eeeeee;
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  height: 1.2rem;
+}
+
+.description_h5_accent {
+  font-weight: 900;
+}
+
+.tutorial {
+  font-weight: 100;
+  font-style: normal;
+  background: lightskyblue;
+}
+
+.sign {
+  font-weight: 100;
+  color: white;
+  background: #2b2b2b;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-feedback-mailto {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 1rem;
+}
+
+.buy {
+  background: #eee;
+  text-align: center;
+  height: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.buy__button {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.feedback-form-modal {
+  background: white;
+  color: black;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  border-radius: 0;
+}
+.feedback-form-modal input, .feedback-form-modal textarea {
+  border-radius: 0;
+}
+.feedback-form-modal .modal-footer button {
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+}
+.feedback-form-modal .modal-footer {
+  border: none;
+}
