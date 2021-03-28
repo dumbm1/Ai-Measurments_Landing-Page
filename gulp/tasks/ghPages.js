@@ -1,7 +1,5 @@
-const gulp = require('gulp');
-const ghPages = require('gulp-gh-pages');
+const ghPages = require('gh-pages');
 
-module.exports = function ghPages() {
-  return gulp.src('./build/*/*/*/*')
-             .pipe(ghPages());
+module.exports = function deploy() {
+  return ghPages.publish('build', function(err){});
 };
